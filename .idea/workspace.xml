@@ -4,9 +4,9 @@
     <list default="true" id="d827deb8-e6cb-45a2-a43b-75f96c5fe193" name="Default" comment="" />
     <ignored path="TopCoder.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/MaxHeap.java" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370797495114" ignored="false" />
+    <file path="/MaxHeap.java" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370809599543" ignored="false" />
     <file path="/fragment.java" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370743340096" ignored="false" />
-    <file path="/MaxHeapTest.java" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370797852545" ignored="false" />
+    <file path="/MaxHeapTest.java" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370809689340" ignored="false" />
     <file path="/Dummy.txt" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370743202155" ignored="false" />
     <file path="/Costable.java" changelist="d827deb8-e6cb-45a2-a43b-75f96c5fe193" time="1370797644594" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,10 +81,10 @@
       <file leaf-file-name="MaxHeap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/MaxHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="58" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="117" column="47" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#294#324#0" expanded="true" />
+                <element signature="e#307#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="Costable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/util/Costable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+            <state line="9" column="26" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,10 +102,10 @@
       <file leaf-file-name="MaxHeapTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/MaxHeapTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="19" selection-start="329" selection-end="329" vertical-scroll-proportion="0.3466872">
+            <state line="24" column="48" selection-start="699" selection-end="699" vertical-scroll-proportion="0.53158706">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#298#304#0" expanded="true" />
+                <element signature="e#331#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,8 +125,8 @@
         <option value="$PROJECT_DIR$/test/MaxHeapTest.java" />
         <option value="$PROJECT_DIR$/src/MaxHeap.java" />
         <option value="$PROJECT_DIR$/src/util/MaxHeapTest.java" />
-        <option value="$PROJECT_DIR$/src/util/MaxHeap.java" />
         <option value="$PROJECT_DIR$/src/util/Costable.java" />
+        <option value="$PROJECT_DIR$/src/util/MaxHeap.java" />
         <option value="$PROJECT_DIR$/src/test/MaxHeapTest.java" />
       </list>
     </option>
@@ -410,11 +410,11 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32970297" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970297" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19693655" sideWeight="0.670297" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16284987" sideWeight="0.670297" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -484,13 +484,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/util/Costable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
@@ -498,22 +491,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Costable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/util/MaxHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="58" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+        <state line="117" column="47" selection-start="3573" selection-end="3573" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#294#324#0" expanded="true" />
+            <element signature="e#307#337#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/MaxHeapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="329" selection-end="329" vertical-scroll-proportion="0.3466872">
+        <state line="24" column="48" selection-start="699" selection-end="699" vertical-scroll-proportion="0.53158706">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#298#304#0" expanded="true" />
+            <element signature="e#331#337#0" expanded="true" />
           </folding>
         </state>
       </provider>

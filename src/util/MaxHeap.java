@@ -2,17 +2,20 @@ package util;
 
 import sun.print.SunPrinterJobService;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
-public class MaxHeap<T extends Comparable<T> & Costable<T>> {
+public class MaxHeap<T extends Costable> {
     private static final int DEFAULT_CAPACITY = 10;
     private int heapSize = 0;
     private T[] maxHeap = null;
     private int currentIndex = 0;
     @SuppressWarnings("unchecked")
-    public MaxHeap(int heapSize) {
+    public MaxHeap(Class<T> type, int heapSize) {
         this.heapSize = heapSize;
         // cast generic Object to Template type
-        maxHeap = (T[]) new Object[DEFAULT_CAPACITY];
+
+        maxHeap = (T[]) Array.newInstance(type, heapSize);
+        //maxHeap = (T[]) new Object[heapSize];
     }
 
     public int size() {
@@ -110,7 +113,11 @@ public class MaxHeap<T extends Comparable<T> & Costable<T>> {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Heap [util.MaxHeap=");
-        builder.append(Arrays.toString(maxHeap));
+        for(T node : maxHeap) {
+            if(node == null) continue;
+            builder.append(node.getCost() + " ");
+        }
+        //builder.append(Arrays.toString(maxHeap));
         builder.append("]");
         return builder.toString();
     }

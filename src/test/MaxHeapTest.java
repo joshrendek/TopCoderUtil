@@ -12,24 +12,27 @@ import org.junit.Test;
 public class MaxHeapTest {
     @Test
     public void testSetup() {
-        MaxHeap<Node> maxHeap = new MaxHeap<Node>(10);
-//        maxHeap.add(10);
-//        maxHeap.add(20);
-//        maxHeap.add(100);
-//        maxHeap.add(40);
-//
-//        System.out.println(maxHeap);
-//
-//        assertEquals(maxHeap.pop(), Integer.valueOf(100));
-//        assertEquals(maxHeap.pop(), Integer.valueOf(40));
-//        assertEquals(maxHeap.pop(), Integer.valueOf(20));
-//        assertEquals(maxHeap.pop(), Integer.valueOf(10));
+        //Node n = new Node(10);
+        MaxHeap<Node> maxHeap = new MaxHeap<Node>(Node.class, 10);
+        maxHeap.add(new Node(10));
+        maxHeap.add(new Node(20));
+        maxHeap.add(new Node(100));
+        maxHeap.add(new Node(40));
+
+        assertEquals(maxHeap.pop().getCost(), 100);
+        assertEquals(maxHeap.pop().getCost(), 40);
+        assertEquals(maxHeap.pop().getCost(), 20);
+        assertEquals(maxHeap.pop().getCost(), 10);
 
 
     }
 
-    public class Node implements Comparable, Costable {
+    public class Node implements Costable {
         private int cost;
+
+        public Node() {
+            cost = 0;
+        }
 
         public Node(int cost) {
             this.cost = cost;
@@ -39,21 +42,7 @@ public class MaxHeapTest {
             return cost;
         }
 
-        @Override
-        public boolean equals(Object o) {
-            return this.cost == ((Node) o).getCost() ? true : false;
-        }
 
-        @Override
-        public int compareTo(Object o) {
-            if (!(o instanceof Node)) {
-                throw new ClassCastException("A node object expected.");
-            }
-
-            int other_cost = ((Node) o).getCost();
-
-            return this.cost - other_cost;
-        }
     }
 
 

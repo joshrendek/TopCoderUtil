@@ -7,7 +7,7 @@ package util;
  * Time: 1:04 PM
  * To change this template use File | Settings | File Templates.
  */
-public interface Costable<E> {
+public interface Costable {
 
     public int getCost();
 }
