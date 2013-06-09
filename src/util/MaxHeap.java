@@ -1,0 +1,120 @@
+package util;
+
+import java.util.Arrays;
+public class MaxHeap {
+    private int heapSize = 0;
+    private Integer[] maxHeap = null;
+    private int currentIndex = 0;
+    public MaxHeap(int heapSize)
+    {
+        this.heapSize = heapSize;
+        maxHeap = new Integer[heapSize];
+    }
+
+    public int size()
+    {
+        return currentIndex - 1;
+    }
+
+    public Integer pop()
+    {
+        if(maxHeap[0] == null){
+            System.err.println("Empty heap");
+            return null;
+        }
+
+        int max = maxHeap[0];
+        currentIndex--;
+        maxHeap[0] = maxHeap[currentIndex];
+        maxHeap[currentIndex] = null;
+        heapifyDown(0);
+        System.err.println("Popped: " + max);
+        return max;
+    }
+
+    public int top()
+    {
+        return maxHeap[0];
+    }
+
+    public void push(int node)
+    {
+        if(currentIndex == heapSize){
+            pop();
+            push(node);
+        }else{
+            maxHeap[currentIndex] = node;
+            heapifyUp(currentIndex++);
+        }
+    }
+
+    // Compare node value to parent node
+    // if node value > parent node, then switch and continue
+    // else stop
+    private void heapifyUp(int current)
+    {
+        int parent = (current - 1) / 2;
+        if(current < 0)
+            return;
+
+        if(maxHeap[current] > maxHeap[parent]){
+            int tmp = maxHeap[parent];
+            maxHeap[parent] = maxHeap[current];
+            maxHeap[current] = tmp;
+            current = parent;
+            heapifyUp(current);
+        }
+
+    }
+
+    // Compare node value with two children value
+    // if the node is greater than both the children, it stays
+    // else if it is less than or both of its children, then switch
+    // with the lowest value, making the new parent node is highest
+    // repeat until the node is greater than both of children
+    private void heapifyDown(int current)
+    {
+        int left = 2 * current + 1;
+        int right = left + 1;
+
+        if(current > currentIndex / 2) // exit
+            return;
+
+        int biggerChild = 0;
+
+        if(maxHeap[left] == null && maxHeap[right] != null){
+            biggerChild = right;
+        }else if(maxHeap[right] == null && maxHeap[left] != null){
+            biggerChild = left;
+        }else if(maxHeap[left] == null && maxHeap[right] == null){
+            return;
+        }else{
+            biggerChild = maxHeap[left] > maxHeap[right] ? left : right;
+        }
+
+        if(biggerChild == left && maxHeap[left] > maxHeap[current]){
+            int tmp = maxHeap[left];
+            maxHeap[left] = maxHeap[current];
+            maxHeap[current] = tmp;
+            heapifyDown(left);
+        }else if(biggerChild == right && maxHeap[right] > maxHeap[current]){
+            int tmp = maxHeap[right];
+            maxHeap[right] = maxHeap[current];
+            maxHeap[current] = tmp;
+            heapifyDown(right);
+        }else{
+            return;
+        }
+    }
+
+    @Override
+    public String toString()
+    {
+        StringBuilder builder = new StringBuilder();
+        builder.append("Heap [util.MaxHeap=");
+        builder.append(Arrays.toString(maxHeap));
+        builder.append("]");
+        return builder.toString();
+    }
+
+}
