@@ -1,13 +1,10 @@
 package test;
 
+import org.junit.Test;
 import util.Costable;
 import util.MaxHeap;
 
 import static org.junit.Assert.assertEquals;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
 public class MaxHeapTest {
     @Test

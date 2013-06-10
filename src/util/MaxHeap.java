@@ -1,9 +1,7 @@
 package util;
 
-import sun.print.SunPrinterJobService;
-
 import java.lang.reflect.Array;
-import java.util.Arrays;
+
 public class MaxHeap<T extends Costable> {
     private static final int DEFAULT_CAPACITY = 10;
     private int heapSize = 0;
@@ -33,7 +31,7 @@ public class MaxHeap<T extends Costable> {
         maxHeap[0] = maxHeap[currentIndex];
         maxHeap[currentIndex] = null;
         heapifyDown(0);
-        System.err.println("Popped: " + max);
+        System.err.println("Popped: [" + currentIndex + "] => " + max.getCost());
         return max;
     }
 
