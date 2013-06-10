@@ -4,13 +4,18 @@ import util.Costable;
 import util.btree.TreeNode;
 import util.btree.TreeObject;
 
+import java.util.Random;
+
 
 public class BTreeTest {
     @org.junit.Test
     public void TestBTree() {
-        TreeNode root = new TreeNode();
-        root.treeInsert(new TreeObject(10));
-        System.out.println("Nodes: " + TreeNode.countNodes(root));
+
+        for(int i = 0; i < 100; i++){
+            TreeNode.root.treeInsert(new TreeObject( (new Random()).nextInt() ));
+        }
+        //root.treeInsert(new TreeObject(10));
+        System.out.println("Nodes: " + TreeNode.countNodes(TreeNode.root));
         return;
     }
 

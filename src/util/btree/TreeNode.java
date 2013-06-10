@@ -6,7 +6,7 @@ public class TreeNode {
     TreeObject item;
     TreeNode left;
     TreeNode right;
-    private static TreeNode root;
+    public static TreeNode root;
 
     public TreeNode(TreeObject item) {
         this.item = item;
@@ -26,7 +26,7 @@ public class TreeNode {
         }
     }
 
-    public void treeInsert(TreeObject newTreeObject) {
+    public static void treeInsert(TreeObject newTreeObject) {
         if (root == null) {
             // Empty tree, set root to point to this tree node
             root = new TreeNode(newTreeObject);
